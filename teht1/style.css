@@ -1,0 +1,22 @@
+h1, h2, h3, p, th, td, li{
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background-color: brown;
+    color: beige
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: beige;
+}

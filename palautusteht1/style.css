@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #91A8E8;
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+a, p {
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #28292a;
+}
+
+main {
+  background-image: linear-gradient(to bottom, rgb(37, 75, 98), rgb(6, 48, 61));
+}
+
+.logo {
+  font-size: 24px;
+  color: white;
+}
+
+.nav-buttons ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: end;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-buttons li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.page-content{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  padding-top: 15vh;
+  color: white;
+}
+
+.hero p {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.products {
+  margin-bottom: 20px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.product-cards .card{
+  padding: 15px;
+  color: white;
+  background-color: #1e1e1f;
+  border-radius: 5px;
+}
+
+.contact-page{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+}
+
+.contact-info {
+  color: white;
+}
