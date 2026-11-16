@@ -5,8 +5,8 @@ form.addEventListener("submit", (e) => {
     e.preventDefault();
     const formData = new FormData(form);
     const userSearch = formData.get('q').trim();
-    if (!userSearch) {
-        console.log("Please enter a show name.");
+    if (userSearch.length === 0) {
+        result.textContent = "Please enter a show name.";
         return;
     }
     searchForShow(userSearch);
@@ -20,6 +20,10 @@ async function searchForShow(query) {
             throw new Error("Not found. Try another show name.");
         }
         const shows = await response.json(); // convert the loaded text JSON to a JavaScript object / array
+        if (shows.length === 0) {
+            result.textContent = "No shows found.";
+            return;
+        }
         for (const show of shows) {
             const article = document.createElement("article");
             const h2 = document.createElement("h2");
@@ -36,6 +40,7 @@ async function searchForShow(query) {
             article.append(h2, a, img, summary);
             result.append(article);
         };
+        
         
     } catch (error) {
         console.log(error.message);
