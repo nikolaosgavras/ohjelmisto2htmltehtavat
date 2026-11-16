@@ -1,0 +1,12 @@
+[
+	{
+		"name": "test 1",
+		"description": "test description 1",
+		"address": "https://picsum.photos/1920/1080"
+	},
+	{
+		"name": "test 2",
+		"description": "test description 2",
+		"address": "https://picsum.photos/1920/1080"
+	}
+]
